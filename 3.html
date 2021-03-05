@@ -1,0 +1,347 @@
+
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>넥슨</title>
+	<link rel="shortcut icon" href="https://ssl.nx.com/s2/portal/nexon/image/nexon/nexon.ico" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name=viewport content="width=device-width,initial-scale=1">
+	<meta name="description" content="즐거움이 가득한 넥슨 게임, 모든 게임을 한 곳에서 만나보세요." />
+	<meta property="og:title" content="넥슨" />
+	<meta property="og:description" content="즐거움이 가득한 넥슨 게임, 모든 게임을 한 곳에서 만나보세요." />
+	<meta property="og:image" content="https://ssl.nx.com/S2/p3/main/nexon.png" />
+	<meta property="og:url" content="https://www.nexon.com" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="넥슨" />
+	<meta name="twitter:image" content="https://ssl.nx.com/S2/p3/main/nexon.png" />
+	<meta name="twitter:description" content="즐거움이 가득한 넥슨 게임, 모든 게임을 한 곳에서 만나보세요." />
+	<script type="text/javascript" src="https://ssl.nx.com/s1/global/ngb_head.js" charset="euc-kr"></script>
+	<script type="text/javascript" src="https://ssl.nx.com/s1/global/ngb_util.js" charset="euc-kr"></script>
+	<script src="../js/oasis_util.js"></script>
+	<script type="text/javascript">
+        var agent = new UAParser().getResult();
+        if ($OASIS.Cookie.get('VUL') != '1') {
+            if (agent.os.name == 'Windows' && agent.os.version == 'XP') {
+                document.location.href = 'https://www.nexon.com/Home/Vulnerability';
+            }
+
+            if (agent.browser.name == 'IE') {
+                if (agent.browser.version == 7 || agent.browser.version == 8 || agent.browser.version == 9) {
+                    document.location.href = 'https://www.nexon.com/Home/Vulnerability';
+                }
+            }
+        }
+        documentLoadedCount = 0;
+	</script>
+	<!--[if gt IE 9]><!-->
+	<script src="https://rs.nxfs.nexon.com/home/js/jquery.min.js"></script>
+	<script src="/js/jquery.nanoscroller/0.8.7/jquery.nanoscroller.min.js"></script>
+	<!--<![endif]-->
+	<script src="https://rs.nxfs.nexon.com/home/js/jquery.device.detector.min.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="https://rs.nxfs.nexon.com/home/css/main.css">
+	
+	<script type="text/javascript">
+		function AppleTPA() {
+			var agent = new UAParser().getResult();
+			if (agent.browser.name == 'IE' && agent.browser.version <= 10) {
+				if (confirm('IE 10 이하 버전의 인터넷 익스플로러에서는 Apple 로그인이 정상 작동하지 않을 수 있습니다.\r\n로그인이 원활하지 않을 경우 인터넷 익스플로러를 최신 버전으로 업데이트하여 주세요.')) {
+					NgbLogin.LoginApple(document.location);
+				}
+			} else {
+				NgbLogin.LoginApple(document.location);
+			}
+		}
+	</script>
+
+</head>
+<body>
+	<script type="text/javascript" src="https://ssl.nx.com/s1/global/ngb_bodystart.js" charset="euc-kr"></script>
+	<div class="skipNav"><a href="#contents">skip to contents</a></div>
+	<script src="https://rs.nxfs.nexon.com/common/js/gnb.min.js" data-gamecode="65533" data-ispublicbanner="true" data-minWidth="1007"></script>
+	
+	
+
+
+<div id="wrapper">
+
+	<div id="contents" data-oasisurl="https://oasisapi.nexon.com" data-myapiurl="https://myapi.nexon.com" data-primeurl="https://prime.nexon.com">
+		<div class="promotionBanner">
+			<h2 class="acchidden">배너</h2>
+			<div class="swiper-container promotionBannerCnts">
+				<div class="swiper-wrapper" id="promotionBannerCnts"></div>
+			</div>
+			<div class="promotionBannerPagination">
+				<div class="promotionBannerPaginationWrapper"></div>
+			</div>
+			<div class="promotionNavigation">
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>
+			</div>
+		</div>
+		<div class="myInfo">
+			<div class="title">
+				<h2>추천게임</h2>
+				<div class="bt">
+					<a href="http://help.nexon.com" onclick="sendClick2Log(this);" obj="P_MAIN" opt='{"Name":"Personalization","Type":"Help"}'>고객센터</a>
+					<a href="https://security.nexon.com" onclick="sendClick2Log(this);" obj="P_MAIN" opt='{"Name":"Personalization","Type":"Security"}'>보안센터</a>
+				</div>
+			</div>
+			<div class="recommendGame">
+				<span class="tooltip" id="myGameTooltip">
+					<span class="tooltipCnts">내가 플레이하는 게임을 직접 관리할 수 있어요! <a href="#" class="btMyGameSetting" a2s="click" obj="P_MAIN" opt='{"Name":"Personalization","Type":"MyGame_LayerSettings"}'>MY게임 설정하기</a></span>
+					<a href="#" class="btClose" a2s="click" obj="P_MAIN" opt='{"Name":"Personalization","Type":"MyGame_LayerClose"}'><span class="icon"></span></a>
+					<span class="tooltipDeco"></span>
+				</span>
+				<ul data-resourceurl="https://rs.nxfs.nexon.com">
+					<li class="loading"></li>
+				</ul>
+			</div>
+			<div class="login" style="display:none;">
+				<div class="nexon">
+					<a href="https://nxlogin.nexon.com/common/login.aspx?redirect=https://www.nexon.com" a2s="click" obj="P_MAIN" opt='{"Name":"Personalization","Type":"Login"}'><span class="icon"></span><span class="acchidden">NEXON</span> ID 로그인</a>
+				</div>
+				<div class="etc">
+					<a href="http://nxlogin.nexon.com/common/login.aspx?sec=pcbang" a2s="click" obj="P_MAIN" opt='{"Name":"Personalization","Type":"PCLogin"}'>일회용 로그인</a>
+					<a href="http://nxlogin.nexon.com/common/login.aspx?sec=qr" a2s="click" obj="P_MAIN" opt='{"Name":"Personalization","Type":"QRLogin"}'>QR 로그인</a>
+				</div>
+				<div class="tpa">
+					<p>다른 계정 간편 로그인</p>
+					<a href="#" onclick="NgbLogin.LoginGoogle(document.location); return false;" a2s="click" obj="P_MAIN" opt='{"Name":"Personalization","Type":"GoogleLogin"}'><span class="icon iconGoogle"></span><span class="acchidden">google</span></a>
+					<a href="#" onclick="NgbLogin.LoginFacebook(document.location); return false;" a2s="click" obj="P_MAIN" opt='{"Name":"Personalization","Type":"FacebookLogin"}'><span class="icon iconFacebook"></span><span class="acchidden">facebook</span></a>
+					<a href="#" onclick="NgbLogin.LoginNaver(document.location); return false;" a2s="click" obj="P_MAIN" opt='{"Name":"Personalization","Type":"NaverLogin"}'><span class="icon iconNaver"></span><span class="acchidden">naver</span></a>
+					<a href="#" onclick="AppleTPA(); return false;" a2s="click" obj="P_MAIN" opt='{"Name":"Personalization","Type":"AppleLogin"}'><span class="icon iconApple"></span><span class="acchidden">apple</span></a>
+				</div>
+				<div class="find">
+					<a href="https://member.nexon.com/find/findid.aspx" target="_blank" onclick="NgbMember.SearchNexonID( 1 ); return false;" a2s="click" obj="P_MAIN" opt='{"Name":"Personalization","Type":"IDFind"}'>넥슨 ID찾기</a>
+					<a href="https://member.nexon.com/find/findpwd.aspx" target="_blank" onclick="NgbMember.SearchPassword( 1 ); return false;" a2s="click" obj="P_MAIN" opt='{"Name":"Personalization","Type":"PWFind"}'>비밀번호 찾기</a>
+				</div>
+				<div class="join">
+					<a href="https://member.nexon.com/join/join.aspx" onclick="location.href='https://member.nexon.com/join/join.aspx'; return false;" a2s="click" obj="P_MAIN" opt='{"Name":"Personalization","Type":"Join"}'>회원가입</a>
+					<span class="tooltip tooltipClose">
+						<span class="tooltipCnts"></span>
+						<a href="#" class="btClose" a2s="click" obj="P_MAIN" opt='{"Name":"Personalization","Type":"JoinLayer_Close"}'><span class="icon"></span></a>
+						<span class="tooltipDeco"></span>
+					</span>
+				</div>
+			</div>
+			<!-- 로그인 후 -->
+			<div class="logged stateInfo" style="display:none;">
+				<ul class="tab">
+					<li class="tabInfo"><a href="#info" a2s="click" obj="P_MAIN" opt='{"Name":"Personalization","Type":"CashSecurityTab"}'>캐시/보안</a></li>
+					<li class="tabNews"><a href="#news" a2s="click" obj="P_MAIN" opt='{"Name":"Personalization","Type":"NewsTab"}'>MY게임 소식</a></li>
+				</ul>
+				<div class="info" id="info">
+					<div class="cash">
+						<h3 class="acchidden">캐시</h3>
+						<ul>
+							<li><a href="#" id="btnCash" a2s="click" obj="P_MAIN" opt='{"Name":"Personalization","Type":"NexonCash"}'>넥슨캐시 <span class="stateCash nexoncash">-</span></a></li>
+							<li>
+								플레이포인트
+								<span class="tooltip">
+									<a href="#" class="btTooltip" a2s="click" obj="P_MAIN" opt='{"Name":"Personalization","Type":"PlayPoint"}'><span class="icon"></span></a>
+									<span class="tooltipCnts">넥슨플레이 앱에서 이벤트를 통해 적립되는<br>포인트입니다. <a href="http://nexonplay.nexon.com" a2s="click" obj="P_MAIN" opt='{"Name":"Personalization","Type":"NexonPlay_Info"}'>넥슨플레이 소개보기</a></span>
+									<span class="tooltipDeco"></span>
+								</span>
+								<span class="stateCash playpoint">-</span>
+							</li>
+						</ul>
+						<div class="bt">
+							<a href="#" id="btnCharge" a2s="click" obj="P_MAIN" opt='{"Name":"Personalization","Type":"Charge"}'>충전</a>
+							<a href="#" id="autoCharge" a2s="click" obj="P_MAIN" opt='{"Name":"Personalization","Type":"AutoCharge"}'>자동충전<span>최대 +5%</span></a>
+						</div>
+					</div>
+					<div class="security">
+						<h3 class="acchidden">보안</h3>
+						<ul>
+							<li id="liMvnoBlock"><a href="#" a2s="click" obj="P_MAIN" opt='{"Name":"Personalization","Type":"My_MVNOBlock"}'>알뜰폰 인증 차단 <span class="new">NEW</span> <span class="off">off</span></a></li>
+							<li id="liUseRegionLoginBlock"><a href="#" a2s="click" obj="P_MAIN" opt='{"Name":"Personalization","Type":"My_LoginBlock"}'>해외 로그인 차단 <span class="off">off</span></a></li>
+							<li id="liIdentityBlock"><a href="#" a2s="click" obj="P_MAIN" opt='{"Name":"Personalization","Type":"My_IDBlock"}'>아이디 생성잠금 <span class="off">off</span></a></li>
+							<li id="liCashUseBlock"><a href="#" a2s="click" obj="P_MAIN" opt='{"Name":"Personalization","Type":"My_CashBlock"}'>넥슨캐시 보안설정 <span class="off">off</span></a></li>
+							<li id="liUseOTP"><a href="https://security.nexon.com/otp/index.aspx" a2s="click" obj="P_MAIN" opt='{"Name":"Personalization","Type":"My_UOTP"}'>U-OTP <span class="off">off</span></a></li>
+							<li id="liUsePlayPass"><a href="https://security.nexon.com/playpass/index.aspx" a2s="click" obj="P_MAIN" opt='{"Name":"Personalization","Type":"My_NexonOTP"}'>넥슨 OTP <span class="off">off</span></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="news" id="news">
+					<h3 class="acchidden">MY게임 소식</h3>
+					<div class="btSec">
+						<button class="btMyGameSetting" a2s="click" obj="P_MAIN" opt='{"Name":"Personalization","Type":"News_GameSettings"}'>MY게임 설정</button>
+					</div>
+					<div class="swiper-container newsCnts">
+						<div class="swiper-wrapper">
+						</div>
+					</div>
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div>
+				</div>
+				
+			</div>
+		</div>
+		<div class="newGame" style="display:none;">
+			<h2>신규게임</h2>
+			<ul data-resourceurl="https://rs.nxfs.nexon.com"></ul>
+		</div>
+		<div class="allGame" id="allGame">
+			<h2>전체게임</h2>
+			<div class="viewtype">
+				<fieldset>
+					<legend class="acchidden">filter</legend>
+					<span><input type="radio" name="viewtype" id="thumbnail" a2s="click" obj="P_MAIN" opt='{"Name":"AllGameList","Type":"CardView"}' checked="checked"><label for="thumbnail"><span class="icon"></span><span class="acchidden">섬네일형</span></label></span><span><input type="radio" name="viewtype" id="list" a2s="click" obj="P_MAIN" opt='{"Name":"AllGameList","Type":"ListView"}'><label for="list"><span class="icon"></span><span class="acchidden">리스트형</span></label></span>
+				</fieldset>
+				<span class="tooltip">
+					<span class="tooltipCnts">게임을 한 눈에 볼 수 있는 뷰 타입으로 변경해보세요.</span>
+					<a href="#" class="btClose"><span class="icon"></span></a>
+					<span class="tooltipDeco"></span>
+				</span>
+			</div>
+			<div class="search">
+				<fieldset>
+					<legend class="acchidden">search</legend>
+					<input type="text" placeholder="게임명 검색">
+					<button type="button" obj="P_MAIN" opt='{"Name":"AllGameList","Type":"Search"}'><span class="icon"></span><span class="acchidden"></span></button>
+				</fieldset>
+			</div>
+			<div class="filter">
+				<fieldset class="platform">
+					<legend class="acchidden">filter</legend>
+					<span><input type="radio" name="filter" value="all" id="all" data-selector="genre" data-name="All" obj="P_MAIN" opt='{"Name":"AllGameList","Type":"Filter_Active","Value","All"}' checked="checked"><label for="all">#전체</label></span>
+				</fieldset>
+			</div>
+			<h3 id="pcGame">PC게임 <a href="#mobileGame" a2s="click" obj="P_MAIN" opt='{"Name":"AllGameList","Type":"Mgame_Anchor"}'>모바일게임</a></h3>
+			<ul data-resourceurl="https://rs.nxfs.nexon.com" class="pc cardView filtering">
+				<li class="loading"></li>
+			</ul>
+			<h3 id="mobileGame">모바일게임</h3>
+			<div class="btCommunite"><a href="https://forum.nexon.com" class="btCollect" target="_blank"><span class="icon"></span>커뮤니티 모아보기</a></div>
+			<ul data-resourceurl="https://rs.nxfs.nexon.com" class="mobile cardView">
+				<li class="loading"></li>
+			</ul>
+			<div class="bt"><button type="button" class="btMore" a2s="click" obj="P_MAIN" opt='{"Name":"AllGameList","Type":"CardView_MobileGame_More"}'>더보기</button></div>
+		</div>
+	</div>
+
+	<div class="footer">
+		<ul class="sns">
+			<li><a href="https://www.youtube.com/user/NEXONKR" target="_blank" a2s="click" obj="P_MAIN" opt='{"Name":"Footer","Type":"YouTube"}'><span class="icon iconYoutube"></span><span class="acchidden">NEXON youtube</span></a></li>
+			<li><a href="https://twitter.com/NEXON_KR" target="_blank" a2s="click" obj="P_MAIN" opt='{"Name":"Footer","Type":"Twitter"}'><span class="icon iconTwitter"></span><span class="acchidden">NEXON twitter</span></a></li>
+			<li><a href="https://www.facebook.com/NEXON.KR" target="_blank" a2s="click" obj="P_MAIN" opt='{"Name":"Footer","Type":"Facebook"}'><span class="icon iconFacebook"></span><span class="acchidden">NEXON facebook</span></a></li>
+		</ul>
+		<p class="notice"></p>
+		<ul class="nav">
+			<li class="stipulation"><a href="https://member.nexon.com/policy/stipulation.aspx" a2s="click" obj="P_MAIN" opt='{"Name":"Footer","Type":"FM_Stipualtion"}'><span>이용약관</span></a></li>
+			<li class="privacy"><a href="https://member.nexon.com/policy/privacy.aspx" a2s="click" obj="P_MAIN" opt='{"Name":"Footer","Type":"FM_Privacy"}'><span>개인정보처리방침</span></a></li>
+			<li class="youth"><a href="https://member.nexon.com/policy/youthprotection.aspx" a2s="click" obj="P_MAIN" opt='{"Name":"Footer","Type":"FM_Youthprotection"}'><span>청소년보호정책</span></a></li>
+			<li class="gameIp"><a href="https://member.nexon.com/policy/gameipguide.aspx" a2s="click" obj="P_MAIN" opt='{"Name":"Footer","Type":"FM_GameIPguide"}'><span>게임IP사용가이드</span></a></li>
+			<li class="gameTime"><a href="https://schoolzone.nexon.com/page/nx.aspx?url=timekeeper/intro" a2s="click" obj="P_MAIN" opt='{"Name":"Footer","Type":"FM_Timekeeper"}'><span>게임시간선택제</span></a></li>
+			<li class="help"><a href="http://help.nexon.com" a2s="click" obj="P_MAIN" opt='{"Name":"Footer","Type":"FM_Help"}'><span>고객센터</span></a></li>
+			<li class="totalSrv"><a href="/Home/Sitemap" a2s="click" obj="P_MAIN" opt='{"Name":"Footer","Type":"FM_Sitemap"}'><span>전체서비스</span></a></li>
+		</ul>
+		<ul class="nav">
+			<li class="company"><a href="http://company.nexon.com/" target="_blank" a2s="click" obj="P_MAIN" opt='{"Name":"Footer","Type":"FM_Company"}'><span>회사소개</span></a></li>
+			<li class="recruit"><a href="http://career.nexon.com/" target="_blank" a2s="click" obj="P_MAIN" opt='{"Name":"Footer","Type":"FM_Career"}'><span>채용안내</span></a></li>
+			<li class="ethics"><a href="http://company.nexon.com/Company/Ethics/about/about.aspx" target="_blank" a2s="click" obj="P_MAIN" opt='{"Name":"Footer","Type":"FM_Ethics"}'><span>윤리경영</span></a></li>
+			<li class="font"><a href="http://levelup.nexon.com/font/index.aspx" target="_blank" a2s="click" obj="P_MAIN" opt='{"Name":"Footer","Type":"FM_NexonFont"}'><span>LEVEL UP(넥슨폰트)</span></a></li>
+			<li class="advertise"><a href="http://advertise.nexon.com" target="_blank" a2s="click" obj="P_MAIN" opt='{"Name":"Footer","Type":"FM_Advertise"}'><span>광고문의</span></a></li>
+			<li class="pcroom"><a href="http://pcbang.nexon.com" target="_blank" a2s="click" obj="P_MAIN" opt='{"Name":"Footer","Type":"FM_PCbang"}'><span>넥슨PC방</span></a></li>
+		</ul>
+		<div class="language">
+			<h3><a href="#languageList"><span class="text">Korea</span><span class="icon"></span></a></h3>
+			<ul id="languageList">
+				<li><a href="/Home/RegionRedirect?region=us" a2s="click" obj="P_MAIN" opt='{"Name":"Footer","Type":"FS_America"}'>Global</a></li>
+				<li><a href="/Home/RegionRedirect?region=th" a2s="click" obj="P_MAIN" opt='{"Name":"Footer","Type":"FS_Thailand"}'>Thailand</a></li>
+				<li><a href="http://tw.nexon.com" a2s="click" obj="P_MAIN" opt='{"Name":"Footer","Type":"FS_Taiwan"}'>Taiwan</a></li>
+				<li><a href="/Home/Game" a2s="click" obj="P_MAIN" opt='{"Name":"Footer","Type":"FS_Korea"}'>Korea</a></li>
+				<li><a href="http://www.nexon.co.jp" a2s="click" obj="P_MAIN" opt='{"Name":"Footer","Type":"FS_Japan"}'>Japan</a></li>
+			</ul>
+		</div>
+		<address class="address">
+			<span>㈜넥슨코리아 대표이사 이정헌</span>
+			<span>경기도 성남시 분당구 판교로 256번길 7</span>
+			<span>전화 : 1588-7701</span>
+			<span>팩스 : 0502-258-8322</span><br>
+			<span>E-mail : contact-us@nexon.co.kr</span>
+			<span>사업자등록번호 : 220-87-17483호</span>
+			<span>통신판매업 신고번호 : 제2013-경기성남-1659호</span>
+			<a href="http://www.ftc.go.kr/info/bizinfo/communicationViewPopup.jsp?wrkr_no=2208717483" class="bizinfo" target="_blank" onclick="window.open(this.href, 'ftc', 'width=750, height=700, scrollbars=yes');return false;"><span>사업자정보확인</span></a>
+		</address>
+		<p class="copyright">© NEXON Korea Corporation All Rights Reserved.</p>
+		<p class="logo"><a href="https://www.nexon.com" target="_blank"><span class="icon"></span><span class="acchidden">NEXON</span></a></p>
+	</div>
+</div>
+<div class="myGame">
+	<div class="myGmaeLayer">
+		<h2>MY게임 설정하기</h2>
+		<p>최대 3개의 MY게임 설정이 가능하며, 게임 바로가기 영역에 추가됩니다.</p>
+		<div class="myGameCheck"><input type="checkbox" id="myGameSetting"><label for="myGameSetting"><span>자동설정</span><span>직접설정</span></label></div>
+		<div class="autoSetting">
+			<div class="myGameList">
+				<p>최근 플레이한 게임이 자동으로 업데이트됩니다.<br><span>(오늘 플레이한 게임은 내일 확인 가능합니다.)</span></p>
+				<p class="none"><span>최근 플레이한 게임이 없습니다.</span></p>
+				<ul></ul>
+			</div>
+		</div>
+		<div class="directlySetting">
+			<div class="myGameList">
+				<input type="hidden" id="myGameCodeList" name="myGameCodeList" value="" />
+				<ul></ul>
+				<button type="button" class="btReset" onclick="setMyGameReset();" a2s="click" obj="P_MAIN" opt='{"Name":"MyGame_Customizing","Type":"Reset"}'><span class="icon"></span>초기화</button>
+			</div>
+			<div class="allGameList">
+			</div>
+		</div>
+		<div class="btSec">
+			<button type="button" class="btCancel" a2s="click" obj="P_MAIN">취소</button>
+			<button type="button" class="btSubmit" onclick="setMyGame()" a2s="click" obj="P_MAIN">설정완료</button>
+			<button type="button" class="btClose" a2s="click" obj="P_MAIN" opt='{"Name":"MyGame_Customizing","Type":"Close"}'><span class="acchidden">MY게임 설정 닫기</span></button>
+		</div>
+	</div>
+	<div class="myGameAlert"><p>최대 3개까지 선택 가능합니다.</p></div>
+</div>
+
+	
+	
+	<script src="../js/swiper.js"></script>
+	<script src="../js/ncc.js"></script>
+	<script src="../js/mygame.js"></script>
+	<script src="../js/home.js"></script>
+
+	<script type="text/javascript">
+		document.domain = "nexon.com";
+		function setA2SLog($target) {
+			try {
+				var agent = new UAParser().getResult();
+				$target.find("[a2s]").each(function () {
+					if ($(this).attr("a2s") == "exposure" && !$(this).is(":hidden"))
+						$h.a2s.sendContentsLog($(this).attr("obj"), $(this).attr("opt"));
+					$(this).click(function () {
+						$h.a2s.sendClickLog($(this).attr("obj"), $(this).attr("opt"));
+					});
+				});
+			} catch (e) {
+				$target.find("[a2s]").each(function () {
+					if ($(this).attr("a2s") == "exposure" && !$(this).is(":hidden"))
+						$h.a2s.sendContentsLog($(this).attr("obj"), $(this).attr("opt"));
+					$(this).click(function () {
+						$h.a2s.sendClickLog($(this).attr("obj"), $(this).attr("opt"));
+					});
+				});
+			}
+		}
+		var chkFit = 0;
+		var itVal = setInterval(function () {
+			chkFit = chkFit + 1;
+			var endedCount = 9;
+			if (NgbMember.IsLogin()) {
+				endedCount = 13;
+			}
+			if (documentLoadedCount >= endedCount || chkFit > 20) {
+				setA2SLog($(document));
+				clearInterval(itVal);
+			}
+		}, 100);
+	</script>
+	<script type="text/javascript" src="https://ssl.nx.com/s1/global/ngb_bodyend.js" charset="euc-kr"></script>
+</body>
+</html>
